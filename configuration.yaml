@@ -1,0 +1,12 @@
+mountpoint: mount
+
+sources:
+  - sources/a
+  - sources/b
+  - sources/c
+  - sources/d
+
+shares:
+  - { name: "Pictures", redundancy: "all", directory: "pictures" }
+  - { name: "Downloads", redundancy: "none" }
+  - { name: "Recycle Bin", type: "trash" }
